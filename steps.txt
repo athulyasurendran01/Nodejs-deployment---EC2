@@ -1,0 +1,11 @@
+Deploy Nodejs App in to EC2
+***************************
+
+Step 1 : Create AWS EC2 instance
+Setp 2 : Create new-key-pair (pem) while launching instance
+Setp 3 : Generate new ppk file from pem file ( Open puttyGen load pem file generate new private-key )
+Step 4 : Open ppk file from putty
+a) Session - Host ( from ec2 instance)
+b) Connection -> Data - username( From ec2 insatnce connection ubuntu/ec2-user )
+c) Connection -> SSH -> Auth - Browse ppk file
+
