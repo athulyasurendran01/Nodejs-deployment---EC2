@@ -17,3 +17,13 @@ a) Add Custom TCP rule
 port: 3000/5000(Node running port) 
 Source: Anywhere
 
+Awesome !!! Now Node server is running on http://3.15.41.166:3000
+
+But when we close the terminal it will lose the connection from http://3.15.41.166:3000/api(Site can't be reached)
+Step 1 : sudo npm install pm2@latest -g
+// pm2 will help us to run server continously.
+// pm2 ls : will list all the running server details
+// https://www.youtube.com/watch?v=RF6Dzwwpduo
+Step 2 : pm2 start --name ${application_name} file_name.js(which file start run first) // this command should be in our project directory
+
+Awesome !!! Now Node server is running on http://3.15.41.166:3000
